@@ -107,5 +107,4 @@ Enregistre et recharge :
 source ~/.zshrc
 ```
 
-Ton terminal devrait maintenant être bien plus agréable et informatif.
-text
+Ton terminal devrait maintenant être bien plus agréable.
