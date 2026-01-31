@@ -1,31 +1,32 @@
-# Mon goinfre perso
+# My personal goinfre
 
-Espace temporaire très gros (RAM + swap) → disparaît au redémarrage de la machine.
+Very large temporary storage (RAM + swap) → **cleared on machine reboot**
 
-## Étapes (à faire une seule fois)
+
+## Setup (one-time)
 
 ```bash
-# 1. Créer le dossier
+# 1. Create the directory
 sudo mkdir -p /goinfre/$USER
 
-# 2. Donner les droits
+# 2. Set permissions
+
 sudo chown -R $USER:$USER /goinfre/$USER
 
-# 3. Créer le raccourci dans ton home (le plus pratique)
+# 3. Create a shortcut in your home (recommended)
 ln -s /goinfre/$USER ~/goinfre
 ```
 
-
-## Option : tout effacer automatiquement à chaque reboot
+## Optional: automatically wipe everything on reboot
 ```Bash
-# Ouvre ton crontab
+# Open your crontab
 crontab -e
 ```
 
-Ajoute cette ligne :
+Add this line:
 
 ```bash
 @reboot rm -rf /goinfre/$USER/*
 ```
 
-(Sauvegarde : Ctrl+O → Entrée → Ctrl+X si tu es sur nano)
+(Save: Ctrl+O → Enter → Ctrl+X if you are using nano)
