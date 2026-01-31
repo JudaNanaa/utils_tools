@@ -41,7 +41,7 @@ Powerlevel10k est un thème très rapide et configurable pour Zsh
 - Oh My Zsh installé
 - Une police Nerd Font installée et sélectionnée dans ton terminal (ex: Hack Nerd Font, FiraCode Nerd Font, etc.)
 
-## Installation (en 4 étapes)
+## Installation (en 3 étapes)
 
 ```bash
 # 1. Télécharger Powerlevel10k dans le dossier des thèmes Oh My Zsh
